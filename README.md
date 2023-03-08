@@ -1,0 +1,2 @@
+# .dotfiles
+Fried rice good

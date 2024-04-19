@@ -1,9 +1,34 @@
 #!/bin/bash
 
+LOCAL_PATH=$(pwd)
+
+mkdir "$HOME"/Downloads
+
 sudo dnf -y upgrade
-sudo dnf reinstall linux-firmware
-sudo dnf group install "Hardware Support"
-sudo dnf install kitty hyprland-devel cmake cpio meson hyprpm udiskie wofi swaybg sddm firefox waybar dunst hypridle wlogout
+
+sudo dnf reinstall -y linux-firmware
+
+sudo dnf group install -y "Hardware Support"
+
+sudo dnf install -y \
+  neovim \
+  zsh \
+  kitty \ 
+  hyprland-devel \
+  cmake \
+  cpio \
+  meson \
+  hyprpm \
+  udiskie \
+  wofi \
+  swaybg \
+  sddm \
+  ranger \
+  firefox \
+  waybar \
+  dunst \
+  hypridle \
+  wlogout
 
 # hycov
 # git clone https://github.com/DreamMaoMao/hycov.git /tmp/hycov
@@ -18,3 +43,8 @@ sudo dnf install -y swaylock-effects
 # swaync
 sudo dnf copr enable eddsalkield/SwayNotificationCenter -y
 sudo dnf install -y SwayNotificationCenter
+
+# SDDM 
+systemctl set-default graphical.target 
+
+# SOF FIRMWARE MISSING

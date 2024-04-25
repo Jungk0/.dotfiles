@@ -30,6 +30,7 @@ sudo dnf install -y \
   hypridle \
   wlogout \
   gtk3-devel \
+  gtk4-devel \
   gtk-layer-shell-devel
 
 # hycov

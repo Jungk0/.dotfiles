@@ -28,7 +28,9 @@ sudo dnf install -y \
   waybar \
   dunst \
   hypridle \
-  wlogout
+  wlogout \
+  gtk3-devel \
+  gtk-layer-shell-devel
 
 # hycov
 # git clone https://github.com/DreamMaoMao/hycov.git /tmp/hycov
